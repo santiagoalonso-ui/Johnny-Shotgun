@@ -22,7 +22,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -33,7 +33,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 20
+    globalScale: 30
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -103,77 +103,77 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: Hip
       parentName: Center
-      position: {x: -0.0010573856, y: 0.39630517, z: 0}
+      position: {x: -0.000015860784, y: 0.005944578, z: 0}
       rotation: {x: 0.7071068, y: -0.7071068, z: 0.000000033588773, w: -0.000000033588773}
       scale: {x: 1, y: 1, z: 1}
     - name: Torso
       parentName: Hip
-      position: {x: -0.31086418, y: -1.7347234e-19, z: 0}
+      position: {x: -0.0046629626, y: -2.602085e-21, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Head
       parentName: Torso
-      position: {x: -0.18265466, y: 1.1275702e-17, z: 0}
+      position: {x: -0.0027398202, y: 1.6913553e-19, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: Arm_R
       parentName: Torso
-      position: {x: -0.015806654, y: -0.16157913, z: 0}
+      position: {x: -0.00023709981, y: -0.002423687, z: 0}
       rotation: {x: 0.48876238, y: 0.48591435, z: 0.5216645, w: 0.50285655}
       scale: {x: 1, y: 1, z: 1}
     - name: Elbow_R
       parentName: Arm_R
-      position: {x: -0.19858563, y: 0, z: -8.8817837e-17}
+      position: {x: -0.0029787843, y: 0, z: -1.3322675e-18}
       rotation: {x: 0.0009905654, y: -0.0015210869, z: -0.0226205, w: 0.9997425}
       scale: {x: 1, y: 1, z: 1}
     - name: Hand_R
       parentName: Elbow_R
-      position: {x: -0.17739448, y: -1.11022296e-17, z: -1.7763567e-16}
+      position: {x: -0.0026609171, y: -1.6653344e-19, z: -2.664535e-18}
       rotation: {x: -0.0000041844114, y: 0.0000040449704, z: -0.7110725, w: 0.7031187}
       scale: {x: 1, y: 1, z: 1}
     - name: Arm_L
       parentName: Torso
-      position: {x: -0.015806569, y: 0.16157918, z: -0.000000020467423}
+      position: {x: -0.00023709855, y: 0.0024236876, z: -3.0701136e-10}
       rotation: {x: 0.53691536, y: 0.4874298, z: -0.5018127, w: -0.47150636}
       scale: {x: 1, y: 1, z: 1}
     - name: Elbow_L
       parentName: Arm_L
-      position: {x: 0.19858651, y: 3.330669e-17, z: -0.0000007888864}
+      position: {x: 0.0029787978, y: 4.9960034e-19, z: -0.000000011833295}
       rotation: {x: 0.003580718, y: -0.008616653, z: -0.08051342, w: 0.9967098}
       scale: {x: 1, y: 1, z: 1}
     - name: Hand_L
       parentName: Elbow_L
-      position: {x: 0.17739269, y: 2.7755574e-17, z: 0.0000017226878}
+      position: {x: 0.0026608906, y: 4.163336e-19, z: 0.000000025840317}
       rotation: {x: -0.0044228695, y: 0.0006572298, z: -0.6740068, w: 0.7387116}
       scale: {x: 1, y: 1, z: 1}
     - name: Thigh_R
       parentName: Hip
-      position: {x: 0.050932553, y: -0.080789566, z: 0}
+      position: {x: 0.0007639883, y: -0.0012118435, z: 0}
       rotation: {x: 0.00068005454, y: 0.7078226, z: -0.70637304, w: 0.00487817}
       scale: {x: 1, y: 1, z: 1}
     - name: Ankle_R
       parentName: Thigh_R
-      position: {x: -0.13700226, y: 0, z: 3.273648e-17}
+      position: {x: -0.0020550338, y: 0, z: 4.910472e-19}
       rotation: {x: 0.99997437, y: -0.007162622, z: -0.00015069036, w: 0.000090748945}
       scale: {x: 1, y: 1, z: 1}
     - name: Foot_R
       parentName: Ankle_R
-      position: {x: -0.16684802, y: 1.11022296e-17, z: -1.887379e-16}
+      position: {x: -0.00250272, y: 1.6653344e-19, z: -2.8310687e-18}
       rotation: {x: 0.000007540382, y: 0.000036679477, z: -0.0002788946, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Thigh_L
       parentName: Hip
-      position: {x: 0.05093321, y: 0.08078958, z: -0.000000020467423}
+      position: {x: 0.00076399813, y: 0.0012118437, z: -3.0701136e-10}
       rotation: {x: 0.7064019, y: -0.0052527934, z: 0.0010746154, w: 0.7077907}
       scale: {x: 1, y: 1, z: 1}
     - name: Ankle_L
       parentName: Thigh_L
-      position: {x: 0.13700126, y: 0, z: 0.00000011793902}
+      position: {x: 0.002055019, y: 0, z: 0.0000000017690853}
       rotation: {x: 0.9999668, y: -0.008152862, z: -0.00012588948, w: 0.00010349731}
       scale: {x: 1, y: 1, z: 1}
     - name: Foot_L
       parentName: Ankle_L
-      position: {x: 0.16684839, y: -1.6653344e-17, z: -7.9936056e-16}
+      position: {x: 0.002502726, y: -2.4980017e-19, z: -1.1990408e-17}
       rotation: {x: -0.0000062977965, y: -0.00002026533, z: 0.7090847, w: 0.7051233}
       scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
@@ -183,16 +183,16 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 20
+    globalScale: 0.29999998
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 1
+  animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 0
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0
