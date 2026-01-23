@@ -565,6 +565,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7831028663121040479, guid: 34e31c87930c58c40b2f887ac48bc8b7, type: 3}
+      propertyPath: movementSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7831028663121040479, guid: 34e31c87930c58c40b2f887ac48bc8b7, type: 3}
+      propertyPath: rotationSpeed
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8034548005540049916, guid: 34e31c87930c58c40b2f887ac48bc8b7, type: 3}
       propertyPath: m_Name
       value: Johnny
