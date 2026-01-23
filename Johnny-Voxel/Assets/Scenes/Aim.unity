@@ -564,7 +564,7 @@ GameObject:
   - component: {fileID: 1303229131}
   - component: {fileID: 1303229130}
   - component: {fileID: 1303229129}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Terrain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -656,6 +656,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1496487359}
   - component: {fileID: 1496487358}
+  - component: {fileID: 1496487360}
   m_Layer: 0
   m_Name: MouseTarget
   m_TagString: MainCamera
@@ -692,6 +693,22 @@ Transform:
   - {fileID: 981516404}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1496487360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496487357}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4cc1a7ccf25d9e4481e28cac50ff4cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  mainCamera: {fileID: 1063642884}
 --- !u!4 &1660893268 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7263077473292249414, guid: 34e31c87930c58c40b2f887ac48bc8b7, type: 3}
