@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
 
     public float speed = 3f;
     public float animationSmooth = 0.1f;
+    float gravity = -9.81f;
+    float verticalVelocity;
 
     private Camera mainCamera;
     private Vector2 movementInput;
@@ -40,6 +42,14 @@ public class PlayerController : MonoBehaviour
         Move();
         RotateTowardsMouse();
         UpdateAnimator();
+
+        if (characterController.isGrounded && verticalVelocity < 0)
+            verticalVelocity = -2f;
+
+        verticalVelocity += gravity * Time.deltaTime;
+
+        Vector3 move = new Vector3(movementInput.x, verticalVelocity, movementInput.y);
+        characterController.Move(move * Time.deltaTime);
     }
 
     void ReadMovement()
@@ -99,5 +109,6 @@ public class PlayerController : MonoBehaviour
             Mathf.Lerp(animator.GetFloat("Vertical"), localMove.z, animationSmooth)
         );
     }
+
 }
 
