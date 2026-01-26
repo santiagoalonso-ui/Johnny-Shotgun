@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     public CharacterController characterController;
     public LayerMask groundMask;
+    public Gun gun;
 
     public float speed = 3f;
     public float animationSmooth = 0.1f;
@@ -13,6 +14,20 @@ public class PlayerController : MonoBehaviour
     private Camera mainCamera;
     private Vector2 movementInput;
     private Vector3 lookPos;
+    
+
+    private void Start()
+    {
+        
+    }
+
+    private void FixedUpdate()
+    {
+        
+        {
+
+        }
+    }
 
     private void Awake()
     {
@@ -46,7 +61,8 @@ public class PlayerController : MonoBehaviour
     void Move()
     {
         Vector3 move = new Vector3(movementInput.x, 0, movementInput.y);
-        characterController.Move(move * speed * Time.deltaTime);
+        Vector3 trueMove = transform.rotation * move;
+        characterController.Move(trueMove * speed * Time.deltaTime);
     }
 
     void RotateTowardsMouse()

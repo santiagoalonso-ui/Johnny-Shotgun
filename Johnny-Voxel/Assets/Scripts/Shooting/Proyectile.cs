@@ -14,7 +14,7 @@ public class Proyectile : MonoBehaviour
 
     bool shooting, readyToShoot, reloading;
 
-    public Camera fpsCam;
+    public Camera isometricCam;
     public Transform attackPoint;
 
     public GameObject muzzleFlash;
@@ -57,7 +57,7 @@ public class Proyectile : MonoBehaviour
     {
         readyToShoot = false;
 
-        Ray ray = fpsCam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
+        Ray ray = isometricCam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
         RaycastHit hit;
 
         Vector3 targetPoint;
@@ -76,7 +76,7 @@ public class Proyectile : MonoBehaviour
         currentBullet.transform.forward = directionWithSpread.normalized;
 
         currentBullet.GetComponent<Rigidbody>().AddForce(directionWithSpread.normalized * shootForce, ForceMode.Impulse);
-        currentBullet.GetComponent<Rigidbody>().AddForce(fpsCam.transform.up * upwardForce, ForceMode.Impulse);
+        currentBullet.GetComponent<Rigidbody>().AddForce(isometricCam.transform.up * upwardForce, ForceMode.Impulse);
 
         if (muzzleFlash != null)
             Instantiate(muzzleFlash, attackPoint.position, Quaternion.identity);
