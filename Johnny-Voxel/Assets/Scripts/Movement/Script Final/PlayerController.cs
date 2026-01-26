@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     public CharacterController characterController;
     public LayerMask groundMask;
-    public Gun gun;
+    
 
     public float speed = 3f;
     public float animationSmooth = 0.1f;
